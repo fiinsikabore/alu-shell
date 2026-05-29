@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "obase=$(echo 'bestchol' | wc -c | xargs -I {} echo {}-1 | bc); ibase=$(echo 'water' | wc -c | xargs -I {} echo {}-1 | bc); $(echo $WATER | tr 'water' '0-9a-zA-Z') + ibase=$(echo 'stir' | wc -c | xargs -I {} echo {}-1 | bc); $(echo $STIR | tr 'stir' '0-9a-zA-Z')" | bc | tr '0-9A-Z' 'bestchol'
