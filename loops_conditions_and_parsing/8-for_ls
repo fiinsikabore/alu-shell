@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script lists directory contents cutting after the first dash
+
+for file in *
+do
+    if [ -e "$file" ]
+    then
+        echo "$file" | cut -d'-' -f2- | tr '_' ' '
+    fi
+done
