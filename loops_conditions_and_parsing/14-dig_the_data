@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script groups Apache log entries by IP and status code, counts them, and sorts the output
 
-awk '{print $1, $9}' apache-access.log | sort | uniq -c | sort -rn
+awk '{print $1, $9}' | sort | uniq -c | sort -rn
